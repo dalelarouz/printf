@@ -1,5 +1,7 @@
 #include "main.h"
 
+void print_buffer(char buffer[], int *buff_ind);
+
 /**
  * _printf - produces output according to a format
  * @format: format string containing the characters and the specifiers
@@ -8,7 +10,6 @@
  * specifiers contained into fmt
  * Return: length of the formatted output string
  */
-
 int _printf(const char *format, ...)
 {
 	int (*pfunc)(va_list, flags_t *);
